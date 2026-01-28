@@ -5,7 +5,7 @@ body::before {
     top: 0;
     left: 0;
     width: 100%;
-    background: #0044ff; /* Azul de tu identidad */
+    background: #0044ff; 
     color: white;
     font-size: 12px;
     text-align: center;
