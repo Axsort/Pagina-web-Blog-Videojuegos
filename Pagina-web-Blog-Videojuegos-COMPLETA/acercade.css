@@ -64,3 +64,69 @@ body{
     padding: 64px 0;
     background: linear-gradient(rgba(2, 2, 99, 0.8), rgb(2, 2, 99));
 }
+
+/* Estilos específicos para la página Acerca De */
+
+/* Fondo general de la página para que no se vea blanco plano */
+body {
+    background-color: #0a0a0a;
+    color: #ffffff;
+    line-height: 1.8;
+}
+
+/* Contenedor principal */
+.main-container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background: linear-gradient(145deg, #161616, #1e1e1e);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-left: 5px solid #ff4b2b; /* Acento de color igual al footer */
+}
+
+/* Título "Nosotros" */
+.main-container div:first-child {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ff4b2b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #333;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Estilo del texto/párrafo */
+.main-container p {
+    font-size: 1.15rem;
+    color: #cccccc;
+    text-align: justify;
+}
+
+/* Resaltado para la frase final */
+.main-container p br + br + br + br {
+    display: block;
+    content: "";
+    margin-top: 20px;
+}
+
+/* Efecto para resaltar "por gamers y para gamers" */
+.main-container p::first-line {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .main-container {
+        margin: 30px 15px;
+        padding: 25px;
+    }
+
+    .main-container div:first-child {
+        font-size: 1.8rem;
+    }
+}
